@@ -9,5 +9,6 @@ public class StudentController {
 	public String showPage() {
 		return "index";
 	}
+	
 
 }
