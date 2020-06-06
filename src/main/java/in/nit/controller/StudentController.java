@@ -25,7 +25,7 @@ public class StudentController {
 	public String saveStudent(@ModelAttribute Student student,Model model) {
 		Integer id=	service.saveStudent(student);
 		String msg ="student save with"+id;
-		model.addAttribute(msg, HttpStatus.OK);
+		model.addAttribute("msg", msg);
 		return"index";
 	}
 	@RequestMapping("/all")
